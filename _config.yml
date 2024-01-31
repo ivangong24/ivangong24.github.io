@@ -27,9 +27,9 @@ url: https://ivangong24.github.io
 
 github:
   username: ivangong24 # change to your github username
-
-linkedin:
-  username: yufan-gong-161492194
+  
+twitter:
+  username: # change to your twitter username
 
 social:
   # Change to your full name.
@@ -42,7 +42,7 @@ social:
     - https://github.com/ivangong24 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/yufan-gong-161492194
+    # - https://www.linkedin.com/in/yufan-gong-161492194
 
 google_site_verification: # fill in to your verification string
 
