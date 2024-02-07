@@ -7,5 +7,7 @@ tags: [hello world]
 ---
 
 Hi there, this is my first post. Jekyll is awesome and Chirpy theme is beautiful.
+Hope you like it. Cheers!
+
 
 
