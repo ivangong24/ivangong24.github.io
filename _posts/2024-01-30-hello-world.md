@@ -1,6 +1,6 @@
 ---
-title: "Hello World"
-author: "Yufan Gong"
+title: Hello World
+author: ivan
 date: 2024-01-30 20:00:00 +0800
 categories: [blog]
 tags: [hello world]
