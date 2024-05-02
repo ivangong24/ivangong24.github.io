@@ -7,7 +7,7 @@ tags: [homelab]
 ---
 
 ## Prerequisites
-  - A Raspberry Pi (I have a Raspberry Pi 4 Model B with 8GB of RAM)
+  - A Raspberry Pi (I have a Raspberry Pi 4 Model B with 8GB of RAM as a birthday gift from my friend [Yuyuan](https://lin.foo/))
   - A microSD card (8G at least)/SSD drive (if compatible with nvme expansion board/case, recommended if you want to turn your Raspberry Pi into a NAS)
   - An ethernet cable connect your Raspberry Pi to your router/switch (recommended)
 
