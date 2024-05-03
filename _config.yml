@@ -27,9 +27,10 @@ url: https://ivangong24.github.io
 
 github:
   username: ivangong24 # change to your github username
+
   
-twitter:
-  username: # change to your twitter username
+# twitter:
+#   username: # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,11 +39,13 @@ social:
   email: ivangong@ucla.edu # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username # change to your twitter homepage
+    - https://ivangong24.github.io
     - https://github.com/ivangong24 # change to your github homepage
+    # - https://www.linkedin.com/in/yufan-gong-161492194/ # change to your linkedin homepage
+    #- https://twitter.com/username # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/yufan-gong-161492194
+
 
 google_site_verification: # fill in to your verification string
 
@@ -113,6 +116,7 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
+# The number of posts displayed on each page of the site.
 paginate: 10
 
 # The base URL of your site
