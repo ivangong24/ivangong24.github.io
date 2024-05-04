@@ -20,7 +20,7 @@ tags: [homelab]
 
 3. Select the OS you want to install on your Raspberry Pi. For a home server, I recommend using Raspberry Pi OS Lite (64-bit). Before flashing the OS, make sure to select the correct Raspberry Pi model and storage device. 
 
-4. Before we click the write button, we need to enable SSH for remote control. To do this, you can press `Ctrl/Command + Shift + X` to open the advanced options menu. In the "GENERAL" tab, please set your hostname (optional but recommended, e.g., myraspberrypi), username and password. In the "SERVICES" tab, please enable the toggle for SSH. After that, click the "Save" button to apply the changes.
+4. Before we click the write button, we need to enable SSH for remote control. To do this, you can press `Ctrl/Cmd + Shift + X` to open the advanced options menu. In the "GENERAL" tab, please set your hostname (optional but recommended, e.g., myraspberrypi), username and password. In the "SERVICES" tab, please enable the toggle for SSH. After that, click the "Save" button to apply the changes.
 
 5. Click the "Write" button to flash the OS to the microSD card/SSD drive.
 
@@ -63,11 +63,12 @@ $ curl -fsSL https://get.casaos.io | sudo bash
 3. After the installation is complete, you can access the CasaOS web interface by entering the IP address (or hostname.local) of your Raspberry Pi in a web browser. You will be prompted to create an account and set up your home server!
 
 ## Deploy web services
-Once you logged into CasaOS, you can deploy web services like Nextcloud, Home Assistant, etc. to your Raspberry Pi. CasaOS provides a user-friendly interface (App store) for managing these services and makes it easy to install and configure them. They are actually running in Docker containers, so you can also manage them via the command line if you prefer.
+Once you logged into CasaOS, you can deploy web services like Nextcloud, Home Assistant, etc. to your Raspberry Pi. CasaOS provides a user-friendly interface (`App store`) for managing these services and makes it easy to install and configure them. They are actually running in Docker containers, so you can also manage them via the command line if you prefer.
 
 
 ## File sharing
-If you installed an SSD drive with a relatively large storage, you can also enable file sharing on your Raspberry Pi since CasaOS has Samba installed by default. To do this, you can click "Files" in the CasaOS web interface, right click to create a new folder, then click the three dots on the right upper corner of the folder and select "Share". After that, you can access the shared folder from your computer by clicking `win + R` and entering `\\<your_raspberry_pi_ip_address>(or <your_raspberry_pi_hostname>.local)` if you are using Windows. If you are using MacOS, you can click `Cmd + K` and enter  `smb://<your_raspberry_pi_ip_address>` or `smb://<your_raspberry_pi_hostname>.local`.
+If you installed an SSD drive with a relatively large storage, you can also enable file sharing on your Raspberry Pi since CasaOS has `Samba` installed by default. To do this, you can click `Files` in the CasaOS web interface, right click to create a new folder, then click the three dots on the right upper corner of the folder and select "Share". After that, you can access the shared folder from your computer by clicking `win + R` and entering `\\<your_raspberry_pi_ip_address>(or <your_raspberry_pi_hostname>.local)` if you are using Windows. If you are using MacOS, you can click `Cmd + K` and enter  `smb://<your_raspberry_pi_ip_address>` or `smb://<your_raspberry_pi_hostname>.local`.
+The cool thing is that, if you two devices (any devices with a web browser installed) logged into the CasaOS web interface, you can also share files between them through "FilesDrop" function, which is very similar to AirDrop service on your Apple devices. You can find this function on the left bottom corner of the "Files" page.
 
 ## Conclusion
 Congratulations! You have successfully set up a lite home server on your Raspberry Pi. You can now access your server remotely, deploy web services, and share files with other devices on your network. Feel free to explore more features and services to enhance your home server experience!
