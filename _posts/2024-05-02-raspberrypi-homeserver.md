@@ -48,7 +48,7 @@ $ ssh -p 2222 yourusername@<your_raspberry_pi_ip_address>
 
 ## Create a user-friendly interface
 
-If you are not comfortable with the command line interface, you can install a web-based control panel which makes it easier to manage your Raspberry Pi. There are a lot of options available (e.g., [OpenMediaVault](https://www.openmediavault.org/), [CasaOS](https://casaos.io/), etc.). I will be using CasaOS for this guide. You can take a look at a live demo here: [CasaOS Demo](http://demo.casaos.io/), the default username is `casaos` and the password is `casaos`.
+If you are not comfortable with the command line interface, you can install a web-based control panel which makes it easier to manage your Raspberry Pi. There are a lot of options available (e.g., [OpenMediaVault](https://www.openmediavault.org/), [CasaOS](https://casaos.io/), etc.). I will be using CasaOS for this guide given its great interface and simplicity. You can take a look at a live demo on the website, the default username is `casaos` and the password is `casaos`.
 
 1. Run the following code for updating the system and installing the required packages:
 ```console
