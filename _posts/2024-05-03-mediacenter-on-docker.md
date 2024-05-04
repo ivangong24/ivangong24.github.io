@@ -62,7 +62,7 @@ services:
     restart: unless-stopped
 ```
 
-You can modify the `volumes` section to match your setup. For example, you can click `Files` and navigate to the `AppData`. Then create a folder of the container name (e.g., `sonarr`) and create two other subfolders with it (`config` and `tvseries`). You can then copy the path of the `config` and `tvseries` folders and paste them into the `volumes` section of the `docker-compose.yml` file. After that, you can click `Submit` to start the container.
+You can modify the `volumes` section to match your setup. For example, you can click `Files` and navigate to the `AppData`. Then create a folder of the container name (e.g., `sonarr`) and create two other subfolders within it (`config` and `tvseries`). You can then copy the path of the `config` and `tvseries` folders and paste them into the `volumes` section of the `docker-compose.yml` file. After that, you can click `Submit` to start the container.
 
 Alternatively, you can also use "docker-CLI" to deploy the containers. Here is an example of how to deploy the Sonarr container using the command line:
 
