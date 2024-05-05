@@ -27,7 +27,7 @@ $ docker --version
 ```
 If Docker is not installed, you can install it by the following command:
 ```console
-$ sudo apt-get update
+$ sudo apt-get update && sudo apt-get upgrade -y
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 If you have installed CasaOS following the [last post](https://ivangong24.github.io/posts/raspberrypi-homeserver/), we can skip this step.
