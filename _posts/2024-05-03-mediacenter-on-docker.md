@@ -92,7 +92,11 @@ Take Sonarr as an example, you first need to add an indexer (e.g., Jackett/Prowl
 
 Once you have added the indexer and download client, you can add a new series by clicking `Series` -> `Add Series` -> `Add New Series`. You can search for the series you want to add and click `Add`. After that, you can configure the quality, language, and other settings for the series. It's recommended to set the quality to `1080p` or `720p` given the limited storage and CPU performance of Raspberry Pi. But if you are using other devices such as a NAS with more storage and stronger processors, you can set it to `4K`.
 
-### Step 4: Enjoy your home media center
+### Step 4: Access the media center
+
+Now, we need to setup the media center to stream the content to your devices. You can use Plex, Jellyfin, or Emby as the media server. Here, I will show you how to set up Plex. In your browser, go to `http://<your_raspberry_pi_ip_address>:32400/web` to access the Plex web interface. You will need to sign in or create a new account if you don't have one. After signing in, you can add your media libraries by clicking `Add Library` and selecting the folder where your media files are stored. For example, you can add the `tvseries` folder that you created earlier for Sonarr can select `TV Shows` as the library type. Please note that you should only put one type of media in each folder, otherwise, Plex may not be able to recognize the media files correctly. After adding the library, Plex will scan the folder and fetch metadata for your media files. After you have added all your media libraries, you can access them from any device (e.g., phone, computer, smart TV) using the Plex client app. You can download the Plex client app from the [Plex website](https://www.plex.tv/apps-devices/). You will need to sign in to your Plex account to access your media libraries. 
+
+### Step 5: Enjoy your home media center
 
 Congratulations! You have successfully set up a home media center with Docker on your Raspberry Pi. You can now add more containers to expand the functionality of your media center. Enjoy your favorite movies and TV shows!
 
