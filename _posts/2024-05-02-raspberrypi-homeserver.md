@@ -68,7 +68,7 @@ Once you logged into CasaOS, you can deploy web services like Nextcloud, Home As
 
 ## File sharing
 If you installed an SSD drive with a relatively large storage, you can also enable file sharing on your Raspberry Pi since CasaOS has `Samba` installed by default. To do this, you can click `Files` in the CasaOS web interface, right click to create a new folder, then click the three dots on the right upper corner of the folder and select "Share". After that, you can access the shared folder from your computer by clicking `win + R` and entering `\\<your_raspberry_pi_ip_address>(or <your_raspberry_pi_hostname>.local)` if you are using Windows. If you are using MacOS, you can click `Cmd + K` and enter  `smb://<your_raspberry_pi_ip_address>` or `smb://<your_raspberry_pi_hostname>.local`.
-The cool thing is that, if you two or more devices (any devices with a web browser installed) logged into the CasaOS web interface, you can also share files between them through "FilesDrop" function, which is very similar to AirDrop service on your Apple devices. You can find this function on the left bottom corner of the "Files" page.
+The cool thing is that, if your two or more devices (any devices with a web browser installed) logged into the CasaOS web interface, you can also share files between them through "FilesDrop" function, which is very similar to AirDrop service on your Apple devices. You can find this function on the left bottom corner of the "Files" page.
 
 ## Conclusion
 Congratulations! You have successfully set up a lite home server on your Raspberry Pi. You can now access your server remotely, deploy web services, and share files with other devices on your network. Feel free to explore more features and services to enhance your home server experience!

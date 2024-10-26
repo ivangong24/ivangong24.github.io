@@ -88,7 +88,7 @@ After deploying the containers, you can access the web interface of each contain
 
 You will need to go through the initial setup process for each container. This usually involves setting up the download client, media folders, and other settings.
 
-Take Sonarr as an example, you first need to add an indexer (e.g., Jackett/Prowlarr) and a download client (e.g., Transmission). You can do this by going to `Settings` -> `Indexers` -> `Add Indexer` and `Settings` -> `Download Clients` -> `Add Client`.
+Take `Sonarr` as an example, you first need to add an indexer (e.g., Jackett/Prowlarr) and a download client (e.g., Transmission). You can do this by going to `Settings` -> `Indexers` -> `Add Indexer` and `Settings` -> `Download Clients` -> `Add Client`.
 
 Once you have added the indexer and download client, you can add a new series by clicking `Series` -> `Add Series` -> `Add New Series`. You can search for the series you want to add and click `Add`. After that, you can configure the quality, language, and other settings for the series. It's recommended to set the quality to `1080p` or `720p` given the limited storage and CPU performance of Raspberry Pi. But if you are using other devices such as a NAS with more storage and stronger processors, you can set it to `4K`.
 
