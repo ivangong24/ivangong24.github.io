@@ -32,6 +32,15 @@ for %%I in (*.pdf) do (
 )
 ```
 
+For mac users, you can run the following code in the terminal to extract the specific pages for your own part.
+```zsh
+cd /path/to/exams
+
+for file in *.pdf; do
+    pdftk "$file" cat 6 9-10 output "${file%.*}-YOURINITIAL.pdf"; 
+done
+```
+
 # Extract Text/Notes in graded PDF files
 
 After grading, you may want to extract the text/notes you made during grading to see the total score you gave to each part. Let's say you have a score for each question and you summed them up to get the total score for part B and part D separately on page 6 and page 9 (i.e., the first and second page of the extracted pdf), respectively. You can use the following R code to extract the text/notes in the graded PDF files.
