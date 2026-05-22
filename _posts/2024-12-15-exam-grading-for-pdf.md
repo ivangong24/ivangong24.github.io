@@ -2,7 +2,7 @@
 title: Exam Grading for PDF
 author: ivan
 date: 2024-12-15 20:00:00 +0800
-categories: [study]
+categories: [study, tutorial]
 tags: [exam, grading, pdf]
 ---
 

@@ -2,7 +2,7 @@
 title: Build a home media center with Docker on Raspberry Pi
 author: ivan
 date: 2024-05-03 20:00:00 +0800
-categories: [blog]
+categories: [blog, tutorial]
 tags: [homelab]
 ---
   
