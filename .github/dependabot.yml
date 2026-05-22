@@ -1,0 +1,10 @@
+# Dependabot monitors the action versions in .github/workflows/*.yml
+# and opens a PR whenever a newer release is available. Review and
+# merge the PR to apply the update.
+# Docs: https://docs.github.com/code-security/dependabot
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

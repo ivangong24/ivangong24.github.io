@@ -1,0 +1,14 @@
+---
+---
+
+@import 'main';
+
+/* Suppress Chirpy's loading shimmer on card thumbnails.
+   Chirpy auto-adds `.shimmer` to .preview-img wrappers via
+   refactor-content.html. The looping shimmer overlay is meant to be
+   removed by home.js once a data-src image finishes loading, but our
+   cards use plain src (no data-src lazy path), so that JS hook never
+   fires and the shimmer would loop forever. */
+#post-list .shimmer::before {
+  display: none;
+}
