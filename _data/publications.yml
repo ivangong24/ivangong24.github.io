@@ -1,0 +1,33 @@
+# Selected publications shown on the homepage.
+# Order in this list = order on the page.
+#
+# Each entry:
+#   title:       (required) full paper title
+#   description: short blurb shown under the title in the card
+#   journal:     journal / venue name
+#   year:        publication year
+#   doi:         link the card opens when clicked (usually the DOI URL)
+#   image:       (optional) path to a cover/graphical-abstract image.
+#                If omitted or the file is missing, the card renders
+#                full-width like a no-image blog card.
+
+- title: Agricultural copper pesticide exposure and DNA methylation in Central Valley of California residents with and without Parkinson's disease
+  description: Examined associations between long-term agricultural copper pesticide exposure and blood DNA methylation changes among Central Valley residents with and without Parkinson's disease.
+  journal: Environmental Research
+  year: 2025
+  doi: https://doi.org/10.1016/j.envres.2025.122335
+  image: /assets/images/publications/copper-dna-methylation.png
+
+- title: Duration of agricultural pesticide exposure application and Parkinson's disease in California's Central Valley
+  description: Investigated how the cumulative duration of agricultural pesticide application is associated with Parkinson's disease risk among residents of California's Central Valley.
+  journal: "Environmental Research: Health"
+  year: 2026
+  doi: https://doi.org/10.1088/2752-5309/ae4645
+  image: /assets/images/publications/pesticide-duration-pd.png
+
+- title: Agricultural copper pesticide exposure and metabolic profiles among Parkinson's disease cases and community controls in California
+  description: Used untargeted metabolomics to compare metabolic alterations linked to agricultural copper pesticide exposure between Parkinson's disease cases and community controls in California.
+  journal: Chemical Research in Toxicology
+  year: 2025
+  doi: https://doi.org/10.1021/acs.chemrestox.5c00245
+  image: /assets/images/publications/copper-metabolic-profiles.png

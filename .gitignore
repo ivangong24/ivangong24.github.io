@@ -21,3 +21,7 @@ package-lock.json
 # Misc
 assets/js/dist
 .Rproj.user
+.positai
+.Rproj
+
+

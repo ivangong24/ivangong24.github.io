@@ -1,0 +1,79 @@
+---
+layout: default
+refactor: true
+---
+
+{% assign hp = site.homepage %}
+
+<article class="px-1">
+  <h1 class="dynamic-title">{{ page.title }}</h1>
+
+  <div class="content">
+
+    {% if hp.intro_lead %}
+      <div class="lead">{{ hp.intro_lead | markdownify }}</div>
+    {% endif %}
+
+    {% if hp.intro_subtext %}
+      {{ hp.intro_subtext | markdownify }}
+    {% endif %}
+
+    {% if site.data.publications and site.data.publications.size > 0 %}
+
+      <h2 id="selected-publications" class="mt-5">
+        {{ hp.publications_heading | default: 'Selected Publications' }}
+      </h2>
+
+      <div id="post-list" class="flex-grow-1 px-xl-1">
+        {% for pub in site.data.publications %}
+          {% assign has_image = pub.image %}
+          <article class="card-wrapper card">
+            <a href="{{ pub.doi }}" class="post-preview row g-0 flex-md-row-reverse"{% if pub.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
+              {% if has_image %}
+                <div class="col-md-5">
+                  <div class="preview-img">
+                    <img src="{{ pub.image | relative_url }}" alt="Preview Image" onerror="var c=this.closest('.col-md-5'),s=c.nextElementSibling;if(s){s.classList.replace('col-md-7','col-md-12');}c.remove();">
+                  </div>
+                </div>
+              {% endif %}
+              <div class="col-md-{% if has_image %}7{% else %}12{% endif %}">
+                <div class="card-body d-flex flex-column">
+                  <h1 class="card-title my-2 mt-md-0">{{ pub.title }}</h1>
+
+                  {% if pub.description %}
+                    <div class="card-text content mt-0 mb-3">
+                      <p>{{ pub.description }}</p>
+                    </div>
+                  {% endif %}
+
+                  <div class="post-meta flex-grow-1 d-flex align-items-end">
+                    <div class="me-auto">
+                      {% if pub.journal %}
+                        <i class="far fa-newspaper fa-fw me-1"></i>
+                        <span>{{ pub.journal }}</span>
+                      {% endif %}
+                      {% if pub.year %}
+                        <i class="far fa-calendar fa-fw ms-2 me-1"></i>
+                        <span>{{ pub.year }}</span>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+
+      {% if hp.publications_footer %}
+        <p class="mt-3">
+          {{- hp.publications_footer | markdownify | remove_first: '<p>' | replace: '</p>', '' | strip -}}
+        </p>
+      {% endif %}
+
+    {% endif %}
+
+    {{ content }}
+
+  </div>
+</article>

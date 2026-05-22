@@ -16,7 +16,7 @@ timezone: America/Los_Angeles
 
 title: Yufan Gong # the main title
 
-tagline: A PhD student in Epidemiology at UCLA # it will display as the sub-title
+tagline: A Postdoctoral Scholar in Epidemiology at UCLA # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   My personal website
@@ -115,6 +115,21 @@ assets:
 
 pwa:
   enabled: true # the option for PWA feature
+
+# Homepage content. Used by _layouts/homepage.html.
+# - intro_lead / intro_subtext support inline Markdown (e.g. **bold**, [links]).
+# - The publications list itself lives in _data/publications.yml.
+homepage:
+  intro_lead: |
+    Hi, I'm **Yufan Gong** — a postdoctoral scholar in the Department of Epidemiology at UCLA.
+    My research sits at the intersection of bioinformatics and epidemiology, focused on the
+    complex interplay between environmental toxicants and Parkinson's Disease through the
+    integration of environmental exposure and multi-omics approaches (e.g., epigenomics
+    and metabolomics). I work closely with Dr. Beate Ritz and Dr. Kimberly Paul.
+  intro_subtext:
+  publications_heading: Selected Publications
+  publications_footer: |
+    See my full publication list on [Google Scholar](https://scholar.google.com/citations?user=3ro-gOIAAAAJ&hl=en).
 
 # The number of posts displayed on each page of the site.
 paginate: 10
