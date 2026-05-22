@@ -2,7 +2,7 @@
 title: Github workflow
 author: ivan
 date: 2024-05-16 20:00:00 +0800
-categories: [programming]
+categories: [programming, tutorial]
 tags: [github, workflow]
 ---
 

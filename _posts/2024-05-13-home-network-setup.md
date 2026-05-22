@@ -2,7 +2,7 @@
 title: Home Network Setup
 author: ivan
 date: 2024-05-13 20:00:00 +0800
-categories: [blog]
+categories: [blog, introduction]
 tags: [homenetwork]
 image:
   path: /assets/images/homenetwork.png
