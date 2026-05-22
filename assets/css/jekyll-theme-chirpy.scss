@@ -1,7 +1,12 @@
 ---
 ---
 
-@import 'main';
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
 
 /* Suppress Chirpy's loading shimmer on card thumbnails.
    Chirpy auto-adds `.shimmer` to .preview-img wrappers via
